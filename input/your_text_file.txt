@@ -1,0 +1,2 @@
+MapReduce is a programming model. The MapReduce model is widely used for big data processing. 
+MapReduce splits tasks into map and reduce phases.

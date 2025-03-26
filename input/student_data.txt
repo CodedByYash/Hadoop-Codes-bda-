@@ -1,0 +1,15 @@
+101,Math,85
+101,Science,92
+101,English,78
+102,Math,65
+102,Science,70
+102,English,71
+103,Math,95
+103,Science,97
+103,English,93
+104,Math,55
+104,Science,52
+104,English,58
+105,Math,75
+105,Science,80
+105,English,82
