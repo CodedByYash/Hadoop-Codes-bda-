@@ -115,10 +115,10 @@ if __name__ == "__main__":
 
 # hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-3.2.4.jar ^
 # -files titanic_analysis.py ^
-# -mapper "python titanic_analysis.py --mapper" ^
+# -mapper "python titan
+# ic_analysis.py --mapper" ^
 # -reducer "python titanic_analysis.py --reducer" ^
-# -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/titanic_data.txt ^
+# -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/titanic_sample.csv ^
 # -output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-titanic
-
 
 # type titanic_sample.csv | python titanic_analysis.py --mapper | sort | python titanic_analysis.py --reducer
