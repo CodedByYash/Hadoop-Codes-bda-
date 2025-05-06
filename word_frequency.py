@@ -80,3 +80,10 @@ if __name__ == "__main__":
     else:
         print("Invalid mode. Use 'mapper' or 'reducer'")
         sys.exit(1)
+
+# hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-3.2.4.jar ^
+# -files word_frequency.py ^
+# -mapper "python word_frequency.py mapper mapreduce" ^
+# -reducer "python word_frequency.py reducer" ^
+# -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/your_text_file.txt ^
+# -output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-word

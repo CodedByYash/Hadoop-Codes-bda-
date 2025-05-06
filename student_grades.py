@@ -96,3 +96,10 @@ if __name__ == "__main__":
         print("This script is designed to be used with Hadoop Streaming.")
         print("For local testing, pipe input through mapper and reducer:")
         print("cat student_data.txt | python3 student_grades.py --mapper | sort | python3 student_grades.py --reducer")
+
+# hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-3.2.4.jar ^
+# -files student_grades.py ^
+# -mapper "python student_grades.py --mapper" ^
+# -reducer "python student_grades.py --reducer" ^
+# -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/student_data.txt ^
+# -output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-grades

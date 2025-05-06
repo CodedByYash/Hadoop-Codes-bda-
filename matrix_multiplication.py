@@ -99,3 +99,11 @@ if __name__ == "__main__":
         print("This script is designed to be used with Hadoop Streaming.")
         print("For local testing, pipe input through mapper and reducer:")
         print("cat matrix_data.txt | python3 matrix_multiplication.py --mapper | sort | python3 matrix_multiplication.py --reducer")
+
+# hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-3.2.4.jar ^
+# -files matrix_multiplication.py ^
+# -mapper "python matrix_multiplication.py --mapper" ^
+# -reducer "python matrix_multiplication.py --reducer" ^
+# -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/matrix_data.txt ^
+# -output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-matrix ^
+# -cmdenv "i_max=3" -cmdenv "j_max=2" -cmdenv "k_max=3"
