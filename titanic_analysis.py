@@ -119,3 +119,6 @@ if __name__ == "__main__":
 # -reducer "python titanic_analysis.py --reducer" ^
 # -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/titanic_data.txt ^
 # -output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-titanic
+
+
+# type titanic_sample.csv | python titanic_analysis.py --mapper | sort | python titanic_analysis.py --reducer
