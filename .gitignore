@@ -1,3 +1,6 @@
 output
 output-grades
 output-word
+output-matrix
+output-titanic
+~$*.xlsx~.xlsx
