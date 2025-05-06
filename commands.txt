@@ -11,12 +11,12 @@ type C:\Users\ADMIN\OneDrive\Documents\CL4\bda3\output-word\part-00000
 
 3rd assignment:
 hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-3.2.4.jar ^
-More? -files matrix_multiplication.py ^
-More? -mapper "python matrix_multiplication.py --mapper" ^
-More? -reducer "python matrix_multiplication.py --reducer" ^
-More? -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/matrix_data.txt ^
-More? -output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-matrix ^
-More? -cmdenv "i_max=3" -cmdenv "j_max=2" -cmdenv "k_max=3"
+-files matrix_multiplication.py ^
+-mapper "python matrix_multiplication.py --mapper" ^
+-reducer "python matrix_multiplication.py --reducer" ^
+-input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/matrix_data.txt ^
+-output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-matrix ^
+-cmdenv "i_max=3" -cmdenv "j_max=2" -cmdenv "k_max=3"
 
 to print output run below command
 type C:\Users\ADMIN\OneDrive\Documents\CL4\bda3\output-matrix\part-00000
@@ -24,12 +24,19 @@ type C:\Users\ADMIN\OneDrive\Documents\CL4\bda3\output-matrix\part-00000
 
 4th assignment:
 hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-3.2.4.jar ^
-More?  -files student_grades.py ^
-More?  -mapper "python student_grades.py --mapper" ^
-More?  -reducer "python student_grades.py --reducer" ^
-More?  -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/student_data.txt ^
-More?  -output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-grades
+-files student_grades.py ^
+-mapper "python student_grades.py --mapper" ^
+-reducer "python student_grades.py --reducer" ^
+-input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/student_data.txt ^
+-output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-grades
 
 to print output run below command
 type C:\Users\ADMIN\OneDrive\Documents\CL4\bda3\output-grades\part-00000
 
+titanic
+hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-3.2.4.jar ^
+-files mapreduce_titanic.py ^
+-mapper "python mapredue_titanic.py run_mapper" ^
+-reducer "python mapreduce_titanic.py run_reducer" ^
+-input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/titanic_test_data.csv ^
+-output file:///C:\Users\ADMIN\OneDrive\Documents\CL4\bda3\titanic_output

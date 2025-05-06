@@ -1,0 +1,6 @@
+PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
+1,0,1,John Doe,male,22,1,0,12345,50.0,C85,S
+2,1,1,Jane Smith,female,30,0,1,23456,70.0,C123,C
+3,0,3,Alice Brown,female,24,2,1,34567,10.0,B56,Q
+4,0,2,Bob Johnson,male,45,0,0,45678,20.0,A77,S
+5,1,3,Mary White,female,20,1,0,56789,15.0,C15,S
