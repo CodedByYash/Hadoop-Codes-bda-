@@ -114,8 +114,8 @@ if __name__ == "__main__":
         reducer()
 
 # hadoop jar C:\hadoop\share\hadoop\tools\lib\hadoop-streaming-3.2.4.jar ^
-# -files mapreduce_titanic.py ^
-# -mapper "python mapredue_titanic.py run_mapper" ^
-# -reducer "python mapreduce_titanic.py run_reducer" ^
-# -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/titanic_test_data.csv ^
-# -output file:///C:\Users\ADMIN\OneDrive\Documents\CL4\bda3\titanic_output
+# -files titanic_analysis.py ^
+# -mapper "python titanic_analysis.py --mapper" ^
+# -reducer "python titanic_analysis.py --reducer" ^
+# -input file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/input/titanic_data.txt ^
+# -output file:///C:/Users/ADMIN/OneDrive/Documents/CL4/bda3/output-titanic
